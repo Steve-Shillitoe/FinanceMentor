@@ -1,10 +1,22 @@
-﻿namespace FinanceMentor.Client.Components
+﻿using FinanceMentor.Shared;
+using System;
+using System.ComponentModel.DataAnnotations;
+
+namespace FinanceMentor.Client.Components
 {
     public class EarningModel
     {
+        [Required]
         public DateTime Date { get; set; }
+
+        [Required]
+        [StringLength(50)]
         public string Subject { get; set; } = string.Empty;
+
+        [Required]
         public EarningCategory Category { get; set; }
+
+        [Required]
         public Decimal Amount { get; set; }
 
 
