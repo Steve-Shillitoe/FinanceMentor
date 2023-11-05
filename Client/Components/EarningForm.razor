@@ -1,0 +1,15 @@
+﻿<div class="card">
+    <div class="card-header">
+        Add an earning
+    </div>
+    <div class="card-body">
+        Add an earning
+    </div>
+    <EditForm Model="@earning" OnInvalidSubmit="@OnValidSubmit">
+
+    </EditForm>
+</div>
+
+@code {
+    private EarningModel earning = new EarningModel { Date = DateTime.Today };
+}
