@@ -16,8 +16,4 @@
     <ProjectReference Include="..\Shared\FinanceMentor.Shared.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Services\" />
-  </ItemGroup>
-
 </Project>
